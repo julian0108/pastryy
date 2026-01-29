@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Sweet Delights</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-pastel-pink">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-brown" href="index.html">
+                <i class="fas fa-birthday-cake"></i> Sweet Delights
+            </a>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link text-brown" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li class="nav-item"><a class="nav-link text-brown" href="cart.html"><i class="fas fa-shopping-cart"></i> Cart <span id="cart-count" class="badge bg-brown">2</span></a></li>
+                <li class="nav-item"><a class="nav-link text-brown" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container mt-4">
+        <section class="fade-in">
+            <h2 class="text-center mb-4 text-brown">Your Shopping Cart</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Subtotal</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Chocolate Cake</td>
+                        <td><input type="number" class="form-control qty-input" value="1" min="1"></td>
+                        <td class="price">$25.00</td>
+                        <td class="subtotal">$25.00</td>
+                        <td><button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> Remove</button></td>
+                    </tr>
+                    <tr>
+                        <td>Vanilla Cupcakes</td>
+                        <td><input type="number" class="form-control qty-input" value="2" min="1"></td>
+                        <td class="price">$15.00</td>
+                        <td class="subtotal">$30.00</td>
+                        <td><button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> Remove</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="text-end">
+                <h4>Total: <span id="grand-total" class="text-gold">$55.00</span></h4>
+                <a href="#" class="btn btn-primary pulse"><i class="fas fa-credit-card"></i> Checkout</a>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-pastel-pink text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-2">&copy; 2023 Sweet Delights. All rights reserved.</p>
+            <div>
+                <a href="#" class="text-brown me-3" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-brown me-3" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-brown" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
